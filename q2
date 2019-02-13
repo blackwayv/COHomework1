@@ -1,0 +1,20 @@
+0 1 x
+1 1 i
+2 6
+3 1
+4 begin
+5 .for (i=1; i<=6; i++)
+5 .i<=6
+5 load m(1)
+6 sub m(2)
+7 jump+ m(15)
+8 .x = x * i;
+8 load mq,m(0)
+9 mul m(1)
+10 stor m(0)
+11 .i++
+11 load m(1)
+12 add m(3)
+13 stor m(1)
+14 jump m(5)
+15 halt
