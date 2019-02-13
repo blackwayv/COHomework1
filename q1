@@ -1,0 +1,19 @@
+0 2 a
+1 1 b
+2 c
+3 begin
+4 .if (a<b)
+4 load m(1)
+5 sub m(0)
+6 jump+ m(8)
+7 jump m(12)
+8 .true
+8 load m(0)
+9 add m(1)
+10 stor m(2)
+11 jump m(15)
+12 .false
+12 load m(0)
+13 sub m(1)
+14 stor m(2)
+15 halt
